@@ -15,7 +15,7 @@ function SymptomDiagnosis({navigation}) {
   const getSymptom = async () => {
     setIsLoading(true);
     try {
-      const response = await axios.get('http://localhost:5000/symptom');
+      const response = await axios.get('https://pax-api.ariear.repl.co/symptom');
       setSymptoms(response.data.gejala);
       setIsLoading(false);
     } catch (error) {

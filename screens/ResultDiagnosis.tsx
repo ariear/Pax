@@ -20,7 +20,7 @@ function ResultDiagnosis({route}) {
 
   const postPredict = async () => {
     setIsLoading(true);
-    const fetch = await axios.post('http://localhost:5000/predict', gejalas);
+    const fetch = await axios.post('https://pax-api.ariear.repl.co/predict', gejalas);
     setResultPredict(fetch.data);
     setIsLoading(false);
   };
